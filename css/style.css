@@ -1,0 +1,451 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Regular.woff2") format("woff2"),
+      url("../fonts/Metropolis-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Bold.woff2") format("woff2"),
+      url("../fonts/Metropolis-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+ 
+}
+
+body {
+  /*background: radial-gradient(#efefef, #cccccc);*/
+  background:#141412;
+  background-image: url("../images/Grid-Lines-BG.jpg");
+  background-position: bottom center;
+  /* background-size: contain; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color:white;
+  font-family:"Metropolis", "lato", helvetica; 
+  font-size:17px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+#container {
+  height: 100%;
+  position: relative;
+  min-width:320px;
+  z-index:2;
+  text-align:center;
+}
+
+.content {
+  max-width:1100px;
+  margin:auto;
+  width:90%;
+  display:block;
+  text-align:center;
+  /* max-height:70%; */
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight:bold;
+  
+}
+
+h2 {
+  font-size:2.6rem;
+  line-height:2.9rem;
+  margin-bottom:1rem;
+}
+
+p {
+  font-size:1.2rem;
+  line-height:1.5rem;
+  margin-bottom:1rem;
+}
+
+.header {
+  padding:30px 20px 20px;
+}
+.logo-wordmark {
+  width:140px;
+  margin:auto;
+  display:block;
+}
+
+.logo-coin {
+  position:absolute;
+  top:30px;
+  left:30px;
+}
+.logo-coin img {
+  width:52px;
+  margin:auto;
+  display:none;
+}
+
+canvas {
+  /* margin:auto; */
+  display:block;
+  /* touch-action: pan-y; */
+  cursor: grab;
+  width:50%;
+} 
+.body-text {
+  width:42%;
+  margin-top:5rem;
+  text-align:left;
+}
+
+.grid {
+  margin-top:0px;
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  flex-wrap: wrap;
+}
+.awesimo_thumb {
+  width:30%;
+ margin-bottom:3%;
+  min-width:200px;
+ 
+}
+.awesimo_thumb img {
+  width:100%;
+  display:block;
+  max-width:280px;
+  transition: all ease-in 0.4s;
+}
+.awesimo_thumb img:hover {
+transform: perspective(400px) rotateY(-15deg);
+}
+
+
+
+.awesimo-btn {
+  background-image: linear-gradient(225deg, #62FBFF 0%, #FF50DE 100%);
+  padding-left: 1.20rem;
+  padding-right: 1.20rem;
+  padding-top: 0.70rem;
+  padding-bottom: 0.70rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration:none;
+  color:#000;
+  letter-spacing: 0.05em;
+  --tw-text-opacity: 1;
+  border:0;
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+  opacity: 0.99;
+  display:inline-block;
+  margin-top:1rem;
+}
+
+
+.awesimo-btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-120deg, transparent, transparent,rgba(255,255,255,0.7),rgba(255,255,255,0.9), transparent,transparent);
+  transform: translateX(-100%);
+  transition: 0.6s;
+
+
+}
+
+.awesimo-btn:hover:after {
+  transform: translateX(100%);
+}
+
+
+.header {
+  padding:30px 20px 20px;
+}
+.logo-wordmark {
+  width:140px;
+  margin:auto;
+  display:block;
+}
+
+.logo-coin {
+  position:absolute;
+  top:30px;
+  left:30px;
+}
+.logo-coin img {
+  width:52px;
+  margin:auto;
+  display:none;
+}
+
+
+
+.footer {
+  color:#929299;
+  font-size:12px;
+  padding:20px 0px;
+  text-align:center;
+  text-shadow:0 1px 0px black, 0 2px 0px black, 0 1px 3px black;
+}
+.footer a{
+  color:#929299;
+  transition:color 0.3s linear;
+  text-decoration:none;
+}
+#pa-logo {
+  width: 20px;
+  display: inline;
+  bottom: -5px;
+  position: relative;
+}
+#pa-logo .st0{
+  fill:#929299;
+  transition:fill 0.3s linear;
+}
+.footer a:hover {
+  color:#ffffff;
+}
+.footer a:hover #pa-logo .st0{
+  fill:#ffffff;
+}
+
+
+
+.sprite-animation {
+  height: 52px;
+  width: 52px;
+  background: url("../images/coin-sprite-compressed.png") 0px 0px;
+  background-size: auto 100%;
+  animation: play 4s steps(120) infinite;
+}
+@keyframes play {
+  100% {
+    /* background-position: -12480px; */
+    background-position: -6240px; 
+  }
+}
+
+form {
+  margin:13vh auto;
+  max-width: 16rem;
+  position:relative;
+  width:80%;
+}
+.awesimo-form-input {
+  position:relative;
+}
+
+input.awesimo-input {
+  width: 100%;
+  border-image-source: linear-gradient(
+225deg,#62FBFF 0%,#FF50DE 100%);
+  border-width: 2px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: 0;
+  color: #fff;
+  padding: 3px 0;
+  background: transparent;
+  transition: border-color .2s;
+  font-size: 1.1em;
+  caret-color: #fff;
+  margin:30px 0 30px;
+  padding:7px 0;
+  font-size:17px;
+}
+
+input.awesimo-input:focus {
+  border-image-source: linear-gradient(
+225deg,#FF50DE 0%,#62FBFF 100%);
+  caret-color: #fff;
+}
+
+
+[type=text]:focus, [type=email]:focus, [type=url]:focus, [type=password]:focus, [type=number]:focus, [type=date]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=week]:focus, [multiple]:focus, textarea:focus, select:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color: #2563eb;
+}
+
+
+.awesimo-label {
+    position: absolute;
+    top: 0;
+    font-weight:bold;
+    display: block;
+    transition: .2s;
+    pointer-events: none;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color:#08efff;
+    font-size:17px;
+   
+}
+/* 
+.awesimo-btn {
+  position: relative;
+  font-family:Metropolis,ui-sans-serif,system-ui;
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding: 0.875rem 2rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(21,21,21,1);
+  transition: all .3s;
+  opacity: .99;
+  overflow: hidden;
+  letter-spacing: .05em;
+  background-image: linear-gradient(225deg,#62FBFF 0%,#FF50DE 100%);
+  width:100%;
+} */
+
+.card {
+  padding: 1rem;
+  color: rgba(255,255,255,1);
+  border: 4px solid #f472b6;
+  background: #181816;
+  box-shadow: 0 1px 35px 5px #00000080;
+  border-radius: 0.5rem;
+  margin-bottom:1rem;
+}
+
+.text-secondary {
+  font-weight:500;
+  color:#ff50de;
+}
+
+.card ul, .card li {
+  display:block;
+  margin:0;
+  padding:0;
+}
+.card li{
+  padding:0px;
+  margin:1.2rem 1.2rem .5rem;
+}
+
+.mobile-only {
+  display:none; 
+}
+
+.grid,.card--error {
+  display:none;
+}
+
+@media (min-width: 1500px) { /* Larger Screens */
+  .content {
+    max-width:1700px;
+  }
+  body{
+    font-size:20px;
+  }
+  h2 {
+    font-size:3.3rem;
+    line-height:3.7rem;
+  }
+  p {
+    font-size:1.5rem;
+    line-height:2rem;
+    margin-bottom:2rem;
+  }
+  .awesimo-btn {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+
+}
+
+
+@media (max-width: 960px) {
+  
+h2 {
+  font-size:2.3rem;
+  line-height:2.5rem;
+}
+  .content {
+    width:auto;
+  }
+  .grid {
+    gap:0;
+  }
+  canvas{
+    width:40%;
+  }
+  .awesimo-btn {
+    font-size: 1rem;
+    line-height: 1.35rem;
+  }
+
+}
+
+@media (max-width: 768px) { /* Mobile */
+  canvas { 
+    width:100%;
+  }
+
+  p {
+    font-size:1.3rem;
+    line-height:1.6rem;
+    margin-bottom:1rem;
+  }
+
+  .grid {
+    display: block;
+  }
+  .mobile-only {
+    display:block; 
+    margin:1rem auto 0;
+    padding:0 1rem;
+    font-size:1.8rem;
+    line-height:2rem;
+    max-width:600px;
+  }
+  .body-text h2 {
+    display:none;
+  }
+  .body-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 2rem 5rem;
+    font-weight:bold;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  canvas { 
+    width:300px ;
+    display:block;
+    height:480px ;
+    margin:auto;
+  }
+}
